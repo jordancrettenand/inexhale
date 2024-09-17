@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.ligne {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Conteneur centré */
+body,
+html {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f0f0f0; /* Couleur de fond gris clair */
+}
+
+/* Style du rond noir */
+.rond {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: solid 5px rgb(0, 0, 0);
+  animation: agrandirRetrecir 4s infinite;
+}
+
+/* Animation pour agrandir et rétrécir le rond */
+@keyframes agrandirRetrecir {
+  0%,
+  100% {
+    transform: scale(1); /* Taille normale */
+  }
+  50% {
+    transform: scale(1.5); /* Agrandissement à 150% */
+  }
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
